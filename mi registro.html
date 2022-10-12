@@ -47,82 +47,36 @@
         </ol>
 </div>  
 <div>
-<h4>Textos especiales.</h4>
-<ol>
-    <ul>
-        <li><a href="#a1">Etiqueta bold</a></li>
-        <li><a href="#a2">Etiqueta strong</a></li>
-        <li><a href="#a3">Etiqueta i(cursiva)</a></li>
-        <li><a href="#a4">Etiqueta em(cursiva)</a></li>
-        <li><a href="#a5">Etiqueta mark</a></li>
-        <li><a href="#a6">Etiqueta del</a></li>
-        <li><a href="#a7">Etiqueta ins</a></li>
-        <li><a href="#a8">Etiqueta sub</a></li>
-        <li><a href="#a9">Etiqueta sup</a></li>
-        <li><a href="#a10">Etiqueta mark</a></li>
-    </ul>
-</ol>
-</div>
-<hr>
-    <div id="a1">
-        <b>Así funciona la etiqueta b</b>
-    </div>
-<hr>
-    <div id="a2">
-        <strong>Así funciona strong</strong>
-    </div>
-<hr>
-    <div id="a3">
-        <i>Así funciona la Etiqueta i(cursiva)</i>
-    </div>
-<hr>
-    <div id="a4">
-        <em>Así funciona strong</em>
-    </div>
-<hr>
-    <div id="a5">
-        <mark>Así funciona strong</mark>
-    </div>
-<hr>
-    <div id="a6">
-        <del>Así funciona la Etiqueta i(cursiva)</del>
-    </div>
-<hr>
-    <div id="a7">
-        <ins>Así funciona strong</ins>
-    </div>
-<hr>
-    <div id="a8">
-        <sub>Así funciona strong</sub>
-    </div>
-<hr>
-    <div id="a9">
-        <sup>Así funciona strong</sup>
-    </div>
-<!--Mi Tabla-->
-    <div>
-<table border="10px">
-    <head>
-        <thead>
-            <th>Nombres</th>
-            <th>Apellidos</th>
-            <th>Edad</th>
-        </thead>
-        <tbody>
-            <tr><!--tr significa table row : fila de la tabla-->
-                <td>Mauricio</td>
-                <td>Durán</td>
-                <td>38 años</td>
-            </tr>
-            <tr>
-                <td>Adriana</td>
-                <td>Durán</td>
-                <td>37 años</td>
-            </tr>
-        </tbody>
-    </head>
-</table>
-    </div>
+<form action="#" method="get">
+    <label for="empresa">Está ingresando con la empresa: </label>
+        <input type="text" id="empresa" value="mi_empresa" name="empresa" readonly> <br>
+    <label for="user">Ingrese su usuario: *</label>
+        <input type="text" name="user_server" id="user" required> <br>
+    <label for="pass">Ingrese su contraseña: *</label>
+        <input type="password" name="pass_server" id="pass" required> <br>
+        <label for="rem_me">Recordar sesión: </label>
+        <input type="checkbox" name="remember_me" id="rem_me"> 
+    
+    <br>
+        <input type="checkbox" value="Ciudad1" id="Ciudad1" >
+    <label for="Ciudad1">Ciudad 1</label> <br>
+        <input type="checkbox" value="Ciudad2" id="Ciudad2" >
+    <label for="Ciudad2">Ciudad 2</label> <br>
+        <input type="checkbox" value="Ciudad3" id="Ciudad3" >
+    <label for="Ciudad3">Ciudad 3</label> <br>
+        <input type="checkbox" value="Ciudad4" id="Ciudad4" >
+    <label for="Ciudad4">Ciudad 4</label> <br>
+
+    <input type="radio" id="Sexo_F" name="Sexo" value="f" required>
+        <label for="Sexo_F">Género F</label> <br>
+    <input type="radio" id="Sexo_M" name="Sexo" value="m" required>
+        <label for="Sexo_M">Género M</label> <br>
+
+<label for="tel">Celular:</label>
+    <input type="number" id="tel" minlength="10" maxlength="10" required>
+    <button type="submit">Enviar</button> 
+
+</form>
 <footer>
     <center>
         <a href="mailto:ing_mauricioduran@hotmail.com">Email</a>
